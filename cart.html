@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Urban Core — Cart</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="logo-mark"><img src="logo.jpg" /></div>
+      <div class="brand-text">
+        <span class="the">The</span>
+        <span class="main">Urban Core</span>
+        <span class="sub">Luxury both on the streets</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-pill">Cart <span class="cart-count">0</span></a>
+      <a id="auth-slot" href="login.html">Login</a>
+    </nav>
+
+    <button class="menu-toggle">Menu</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </div>
+</header>
+
+  <main class="container" id="cart-page">
+    <section class="section">
+      <h2 class="section-title">Your cart</h2>
+      <div class="form-card">
+        <div id="cart-list"></div>
+        <div style="display:flex;justify-content:space-between;margin-top:12px;">
+          <strong>Total:</strong> <strong id="cart-total">₹0</strong>
+        </div>
+        <div class="cta-row" style="margin-top:12px;">
+          <a class="cta-secondary" href="shop.html">Continue shopping</a>
+          <button class="btn primary" onclick="alert('Checkout coming soon')">Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-title">The Urban Core</div>
+      <p>Street luxury for the fam. Premium fits. Loud energy. Clean cuts.</p>
+      <a class="footer-link" href="mailto:bunnygaming0825@gmail.com">bunnygaming0825@gmail.com</a>
+      <span class="footer-link">Vadodara, Gujarat, India</span>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <a class="footer-link" href="shop.html">Categories</a>
+      <a class="footer-link" href="cart.html">Cart</a>
+    </div>
+    <div>
+      <div class="footer-title">Support</div>
+      <a class="footer-link" href="contact.html">Contact</a>
+      <a class="footer-link" href="about.html">About us</a>
+    </div>
+    <div>
+      <div class="footer-title">Social</div>
+      <a class="footer-link" href="#">Instagram</a>
+      <a class="footer-link" href="#">Twitter</a>
+      <a class="footer-link" href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="container copy">© 2025 The Urban Core — Luxury both on the streets.</div>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>

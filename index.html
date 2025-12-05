@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Urban Core — Home</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+  <div class="container navbar">
+    <a class="brand" href="index.html">
+      <div class="logo-mark"><img src="logo.jpg" /></div>
+      <div class="brand-text">
+        <span class="the">The</span>
+        <span class="main">Urban Core</span>
+        <span class="sub">Luxury both on the streets</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" class="cart-pill">Cart <span class="cart-count">0</span></a>
+      <a id="auth-slot" href="login.html">Login</a>
+    </nav>
+
+    <button class="menu-toggle">Menu</button>
+  </div>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+    <a href="login.html">Login</a>
+  </div>
+</header>
+
+  <main class="container">
+    <section class="section hero">
+      <div class="hero-card">
+        <h1><span class="accent">Street</span> luxury that hits different.</h1>
+        <p>Gen‑Z cuts. Oversized energy. Clean silhouettes. Premium so your drip stays loud.</p>
+        <div class="badges">
+          <span class="badge">Drop 01: Core Classics</span>
+          <span class="badge">Limited pieces</span>
+          <span class="badge">Free size exchange</span>
+        </div>
+        <div class="cta-row">
+          <a class="cta-primary" href="shop.html">Shop now</a>
+          <a class="cta-secondary" href="about.html">Learn more</a>
+        </div>
+      </div>
+
+      <div class="offer-strip">
+        <span class="offer-title">🔥 Festive Flash: Flat 20% off</span>
+        <span class="offer-sub">Jeans + Pants — use code URBAN20</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Featured</h2>
+      <div class="prod-row">
+        <!-- Use data-add for cart items -->
+        <div class="prod-card">
+          <img class="prod-img" src="./images/Core Tee — Urban Blue.jpg" alt="">
+          <h4 class="prod-name">Core Tee — Urban Blue</h4>
+          <p class="prod-price">₹999 <span class="off">New</span></p>
+          <button class="add-btn" data-add='{"id":"tee-blue","name":"Core Tee — Urban Blue","price":999}'>Add</button>
+        </div>
+        <div class="prod-card">
+          <img class="prod-img" src="./images/Oversized Hoodie — Night Navy.jpg" alt="">
+          <h4 class="prod-name">Oversized Hoodie — Night Navy</h4>
+          <p class="prod-price">₹2,499 <span class="off">-20%</span></p>
+          <button class="add-btn" data-add='{"id":"hoodie-navy","name":"Oversized Hoodie — Night Navy","price":2499}'>Add</button>
+        </div>
+        <div class="prod-card">
+          <img class="prod-img" src="./images/Straight Jeans — Deep Indigo.jpg" alt="">
+          <h4 class="prod-name">Straight Jeans — Deep Indigo</h4>
+          <p class="prod-price">₹1,899</p>
+          <button class="add-btn" data-add='{"id":"jeans-indigo","name":"Straight Jeans — Deep Indigo","price":1899}'>Add</button>
+        </div>
+        <div class="prod-card">
+          <img class="prod-img" src="./images/Cargo Pants — Storm Grey.jpg" alt="">
+          <h4 class="prod-name">Cargo Pants — Storm Grey</h4>
+          <p class="prod-price">₹1,699</p>
+          <button class="add-btn" data-add='{"id":"cargo-grey","name":"Cargo Pants — Storm Grey","price":1699}'>Add</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Top Fashion Deals</h2>
+      <div class="promo-row">
+        <div class="promo-box" style="background-image:url('./images/Top\ Fashion\ Deals.jpg')"></div>
+        <div class="promo-box" style="background-image:url('./images/Top\ Fashion\ Deals\ 2.jpg')"></div>
+        <div class="promo-box" style="background-image:url('./images/Top\ Fashion\ Deals\ 3.jpg')"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Deals of the day</h2>
+      <div class="carousel-wrapper">
+        <button class="car-btn left">❮</button>
+        <div id="deal-carousel" class="car-container">
+          <div class="prod-card">
+            <img class="prod-img" src="./images/Printed Shirt banner.jpg" alt="">
+            <h4 class="prod-name">Printed Shirt</h4>
+            <p class="prod-price">₹599 <span class="off">40% OFF</span></p>
+            <button class="add-btn" data-add='{"id":"printed-shirt","name":"Printed Shirt","price":599}'>Add</button>
+          </div>
+          <div class="prod-card">
+            <img class="prod-img" src="./images/Oversized Tee.jpg" alt="">
+            <h4 class="prod-name">Oversized Tee</h4>
+            <p class="prod-price">₹399 <span class="off">45% OFF</span></p>
+            <button class="add-btn" data-add='{"id":"oversized-tee","name":"Oversized Tee","price":399}'>Add</button>
+          </div>
+          <div class="prod-card">
+            <img class="prod-img" src="./images/Track Pants banner.jpg" alt="">
+            <h4 class="prod-name">Track Pants</h4>
+            <p class="prod-price">₹699 <span class="off">46% OFF</span></p>
+            <button class="add-btn" data-add='{"id":"track-pants","name":"Track Pants","price":699}'>Add</button>
+          </div>
+          <div class="prod-card">
+            <img class="prod-img" src="./images/Sneakers banner.jpg" alt="">
+            <h4 class="prod-name">Sneakers</h4>
+            <p class="prod-price">₹1299 <span class="off">43% OFF</span></p>
+            <button class="add-btn" data-add='{"id":"sneakers","name":"Sneakers","price":1299}'>Add</button>
+          </div>
+        </div>
+        <button class="car-btn right">❯</button>
+      </div>
+    </section>
+  </main>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-title">The Urban Core</div>
+      <p>Street luxury for the fam. Premium fits. Loud energy. Clean cuts.</p>
+      <a class="footer-link" href="mailto:bunnygaming0825@gmail.com">bunnygaming0825@gmail.com</a>
+      <span class="footer-link">Vadodara, Gujarat, India</span>
+    </div>
+    <div>
+      <div class="footer-title">Shop</div>
+      <a class="footer-link" href="shop.html">Categories</a>
+      <a class="footer-link" href="cart.html">Cart</a>
+    </div>
+    <div>
+      <div class="footer-title">Support</div>
+      <a class="footer-link" href="contact.html">Contact</a>
+      <a class="footer-link" href="about.html">About us</a>
+    </div>
+    <div>
+      <div class="footer-title">Social</div>
+      <a class="footer-link" href="#">Instagram</a>
+      <a class="footer-link" href="#">Twitter</a>
+      <a class="footer-link" href="#">YouTube</a>
+    </div>
+  </div>
+  <div class="container copy">© 2025 The Urban Core — Luxury both on the streets.</div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
