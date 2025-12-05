@@ -119,3 +119,21 @@ footer{margin-top:30px;background:#0f1111;color:#fff}
 
 /* Utility */
 .hidden{display:none !important}
+
+
+
+/* ----------------------------------------------------------- */
+/* --- FIX FOR BANNER CAROUSEL (ONLY CHANGE YOU NEEDED) ----- */
+/* ----------------------------------------------------------- */
+
+#deal-carousel .prod-card {
+  min-width: 420px;     /* Bigger card width for wide banners */
+  flex: 0 0 auto;
+}
+
+#deal-carousel .prod-img {
+  height: 240px;        /* Big banner height */
+  object-fit: cover;    /* Avoid stretching */
+  border-radius: 12px;
+}
+
